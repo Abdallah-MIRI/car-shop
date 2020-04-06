@@ -323,6 +323,7 @@ body {
 
 /* ---------------------------------- Sale ---------- */
 .sale {
+  background: #f1f6f7;
   background: url('assets/images/home/parallax.png') center / cover no-repeat;
 }
 
