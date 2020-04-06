@@ -1,0 +1,480 @@
+/* 
+** Author: Abdallah Mohammed
+** Theme: Shop Buy
+** Version: 1.0
+*/
+
+
+
+
+/* ---------------------------------- Global ---------- */
+body {
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.667;
+}
+/* End Global */
+
+
+
+
+/* ---------------------------------- Header ---------- */
+.header {
+  position: fixed;
+  width: 100%;
+  height: 89px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+/* Logo */
+.header .content .logo {
+  flex: .5;
+}
+
+.header .content .logo .img-logo {
+  width: 12%;
+}
+
+/* Navigation */
+.header .content .navigation {
+  flex: 1;
+}
+
+.header .content .navigation .unlist .menu-link {
+  padding: 0 20px;
+  color: #222;
+}
+
+.header .content .navigation .unlist .menu-link:hover {
+  color: #384aeb;
+}
+
+
+.header .content .navigation .unlist .active {
+  color: #384aeb;
+}
+
+/* Shop Buy */
+.header .content .shop-buy {
+  flex: .5;
+}
+
+.header .content .shop-buy .btn-img {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.header .content .shop-buy .btn-img .search-car {
+  margin-right: 7px;
+}
+
+.header .content .shop-buy .btn-img .search-car,
+.header .content .shop-buy .car-count .car-shop {
+  width: 20px;
+}
+
+.header .content .shop-buy .car-count .count {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 16px;
+  border-radius: 10px;
+  background-color: #384aeb;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.header .content .shop-buy .btn-buy {
+  margin-left: 20px;
+  padding: 10px 45px;
+  border-radius: 30px;
+  border: 1px solid #eee;
+  color: #222;
+  transition: all .4s ease;
+}
+
+.header .content .shop-buy .btn-buy:hover {
+  border-color: #384aeb;
+}
+/* End Header */
+
+
+
+
+
+/* ---------------------------------- Front Intro ---------- */
+.front-intro {
+  padding-top: 89px;
+  background: #F1F6F7;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.front-intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  display: block;
+  background-color: #384aeb;
+}
+
+.front-intro .row {
+  padding-top: 60px;
+}
+
+.front-intro .row .col-xl-6,
+.front-intro .row .col-lg-6,
+.front-intro .row .col-md-6 {
+  padding: 0 !important;
+}
+
+/* Image Intro */
+.front-intro .img-intro {
+  max-width: 462px;
+  height: 698px;
+  margin-right: 8.333%;
+  position: relative;
+  top: 1px;
+}
+
+/* Text Intro */
+.front-intro .text-intro .item-one {
+  font-size: 30px;
+  font-family: "Roboto",sans-serif;
+  color: #555555;
+  margin-bottom: 12px;
+}
+
+.front-intro .text-intro .title {
+  font-family: "Roboto",sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.front-intro .text-intro .item-tow {
+  color: #777;
+  font-family: "Roboto",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.667;
+  margin-bottom: 40px;
+}
+
+.front-intro .text-intro .browsr-now {
+  padding: 12px 41px;
+  border-radius: 30px;
+  border: 1px solid #384aeb;
+  background-color: #384aeb;
+  color: #fff;
+  transition: all .4s ease;
+}
+
+.front-intro .text-intro .browsr-now:hover {
+  color: #222;
+  background-color: transparent;
+}
+/* End Front Intro */
+
+
+
+
+/* ---------------------------------- Carousel ---------- */
+.carousel {
+  margin-bottom: 120px;
+}
+
+.carousel .csel {
+  flex: 1;
+  padding: 0 5px;
+  min-width: 340px;
+  position: relative;
+}
+
+.carousel .details {
+  position: absolute;
+  bottom: 50px;
+  left: 5px;
+  background: #384aeb;
+  padding: 23px 90px 23px 25px;
+  transform: translateY(50px);
+  opacity: 0;
+  z-index: -1;
+  transition: all .4s ease-in-out;
+  color: #fff;
+}
+
+.carousel .csel:hover .details {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel .csel::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.48);
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+.carousel .csel:hover.csel::after  {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* End Carousel */
+
+
+
+
+/* ---------------------------------- Trending Products ---------- */
+.trending-products {
+  margin: 120px 0 70px;
+}
+
+.trending-products .title-trend {
+  margin-bottom: 60px;
+}
+
+.trending-products .title-trend p {
+  margin-bottom: 3px;
+}
+
+.trending-products .title-trend h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  color: #222;
+}
+
+.trending-products .title-trend h2 span {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #384aeb;
+}
+
+/* Card Product */
+.trending-products .card-prot {
+  margin-bottom: 30px;
+}
+
+/* Head */
+.trending-products .card-prot .card-head .list-card {
+  width: 100%;
+  padding: 30px 5px 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(255,255,255,0.5);
+  transition: all .48s ease;
+}
+
+.trending-products .card-prot:hover .card-head .list-card {
+  opacity: 1;
+  padding-bottom: 30px;
+}
+
+.trending-products .card-prot .card-head .list-card .item {
+  width: 30px;
+  margin: 0 5px;
+  padding: 2px 3px;
+  background-color: #8894ff;
+}
+
+.trending-products .card-prot .card-head .list-card .item:hover {
+  background-color: #384aeb;
+}
+
+/* Body */
+.trending-products .card-prot .card-body {
+  padding: 20px;
+}
+
+.trending-products .card-prot .card-body .title-prod {
+  color: #222;
+  font-size: 20px;
+}
+
+.trending-products .card-prot:hover .card-body .title-prod {
+  color: #384aeb;
+}
+
+.trending-products .card-prot .card-body p:nth-of-type(2) {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* End Trending Products */
+
+
+
+
+/* ---------------------------------- Sale ---------- */
+.sale {
+  background: url('/assets/images/home/parallax.png') center / cover no-repeat;
+}
+
+.sale .offer-content {
+  padding: 122px 0 135px;
+}
+
+.sale .offer-content h3 {
+  color: #222;
+  font-size: 50px;
+  margin-bottom: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.sale .offer-content h4 {
+  font-size: 30px;
+  color: #222;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.sale .offer-content p {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.sale .offer-content .offer-link {
+  display: inline-block;
+  border: 1px solid #384aeb;
+  border-radius: 30px;
+  color: #222;
+  font-weight: 500;
+  padding: 12px 50px;
+  background: #384aeb;
+  color: #fff;
+  transition: all .4s ease;
+  margin-top: 24px;
+}
+
+.sale .offer-content .offer-link:hover {
+  color: #222;
+  background-color: transparent;
+}
+/* End Sale */
+
+
+
+
+/* ---------------------------------- Best Sellers ---------- */
+.best-sellers {
+  margin: 120px 0 70px;
+}
+
+/* Title Sellers */
+.best-sellers .title-sellers {
+margin-bottom: 60px;
+}
+
+.best-sellers .title-sellers p {
+  margin-bottom: 3px;
+}
+
+.best-sellers .title-sellers h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+}
+
+.best-sellers .title-sellers h2 span {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #384aeb;
+}
+
+.best-sellers .sell-part {
+  position: absolute;
+}
+
+.best-sellers .sell-part.active {
+ position: relative;
+}
+
+/* show Head */
+.best-sellers .show-sellers .s-head .s-list {
+  width: 100%;
+  padding: 30px 5px 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(255,255,255,0.5);
+  transition: all .48s ease;
+}
+
+.best-sellers .show-sellers:hover .s-head .s-list {
+  opacity: 1;
+  padding-bottom: 30px;
+}
+
+.best-sellers .show-sellers .s-head .s-list .s-item {
+  width: 30px;
+  margin: 0 5px;
+  padding: 2px 3px;
+  background-color: #8894ff;
+}
+
+.best-sellers .show-sellers .s-head .s-list .s-item:hover {
+  background-color: #384aeb;
+}
+
+/* Show Body */
+.best-sellers .show-sellers .s-body {
+  padding: 20px;
+}
+
+.best-sellers .show-sellers .s-body .s-title {
+  color: #222;
+  font-size: 20px;
+}
+
+.best-sellers .show-sellers:hover .s-body .s-title  {
+  color: #384aeb;
+}
+
+.best-sellers .show-sellers .s-body p:nth-of-type(2) {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Next Previous */
+.best-sellers .s-prev,
+.best-sellers .s-next {
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background: #f1f6f7;
+  z-index: 1;
+}
+
+.best-sellers .s-prev {
+  top: 50%;
+  left: -6%;
+}
+
+.best-sellers .s-next {
+  top: 50%;
+  right: -6%;
+  left: auto;
+}
+
+.best-sellers .s-prev:hover,
+.best-sellers .s-next:hover {
+  background: #384aeb;
+}
+/* End Best Sellers */
