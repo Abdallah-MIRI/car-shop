@@ -624,6 +624,63 @@ margin-bottom: 60px;
   background-color: #002347;
 }
 
+/* About Us */
+.about-some h4 {
+  color: #fff;
+  font: normal normal 600 36px / 1.2 "Roboto",sans-serif;
+}
+
+.about-some p {
+  color: #7b838a;
+}
+
+/* Quick Links */
+.quick-links ul li {
+  margin-bottom: 12px;
+}
+
+.quick-links ul li a {
+  color: #7b838a;
+}
+
+.quick-links ul li a:hover {
+  color: #384aeb;
+}
+
+.footer .footer-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Oswald",sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.footer .footer-head .content-gallery {
+  margin: 5px;
+}
+
+.footer .footer-head .content-gallery .img-gallery {
+  width: 70px;
+}
+
+.footer .footer-head .content-gallery .link-gallery {
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #384aeb;
+  transition: all .5s ease;
+  opacity: 0;
+}
+
+.footer .footer-head .content-gallery:hover .link-gallery {
+  opacity: 1;
+  width: 100%;
+}
+
 .footer .footer-buttom {
   background-color: #002347fa;
 }
