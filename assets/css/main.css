@@ -10,9 +10,7 @@
 /* ---------------------------------- Global ---------- */
 body {
   color: #777;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.667;
+  font: normal normal 400 15px / 1.667 "Roboto", sans-serif;
 }
 /* End Global */
 
@@ -570,9 +568,50 @@ margin-bottom: 60px;
 
 
 /* ---------------------------------- Subscribe ---------- */
+.subscribe {
+  top: 100px;
+}
+
 .subscribe .sub-content {
   padding: 85px 10px;
+  border-radius: 5px;
+  background-color: #fff;
   box-shadow: 0px -5px 20px 0px rgba(56,74,235,0.1);
+}
+
+.subscribe .sub-content .sub-title h2 {
+  color: #222;
+  font: normal normal 500 36px / 1.3 "Oswald", sans-serif;
+}
+
+#email {
+  border-radius: 30px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  padding-left: 20px;
+  font-size: 14px;
+  width: 34%;
+}
+
+#btn-sub {
+  border: 1px solid #384aeb;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-left: 15px;
+  padding: 12px 35px;
+  background: #384aeb;
+  color: #fff;
+  transition: all .4s ease;
+}
+
+#btn-sub:hover {
+  background: transparent;
+  color: #222;
+}
+
+#email:focus,
+#btn-sub:focus {
+  outline: none;
 }
 /* End Subscribe */
 
@@ -580,8 +619,12 @@ margin-bottom: 60px;
 
 
 /* ---------------------------------- Footer ---------- */
-.footer {
-  height: 696px;
+.footer .footer-head {
+  padding: 195px 0px 120px;
   background-color: #002347;
+}
+
+.footer .footer-buttom {
+  background-color: #002347fa;
 }
 /* End Footer */
