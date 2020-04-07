@@ -49,13 +49,15 @@
           <div class="shop-buy">
             <ul class="list-unstyled m-0">
               <li class="d-inline">
-                <button class="btn-img">
+                <button id="btn-search">
                   <img src="assets/images/icon-shop/search-outline.svg" alt="Search Shop" class="search-car">
                 </button>
               </li>
-              <li class="car-count d-inline position-relative">
-                <img src="assets/images/icon-shop/cart-outline.svg" alt="Car Shop" class="car-shop">
-                <span class="count">2</span>
+              <li class="car-count d-inline">
+                <button id="btn-car-shop" class="position-relative">
+                  <img src="assets/images/icon-shop/cart-outline.svg" alt="Car Shop" class="car-shop">
+                  <span class="count">2</span>                  
+                </button>
               </li>
               <li class="d-inline">
                 <a href="#buy" class="btn-buy text-decoration-none">Buy Now</a>
@@ -63,7 +65,6 @@
             </ul>
           </div>
         </div>
-
 
       </div>
     </header>
@@ -331,7 +332,7 @@
             <h2>Best <span>Sellers</span></h2>
           </div>
 
-          <div class="row position-relative">
+          <div id="containerpart" class="row position-relative">
             <!-- Show Sellers -->
             <div class="sell-part col-xl-3 active">
               <div class="show-sellers">
@@ -502,16 +503,102 @@
           </div>
 
           <!-- Previous Show -->
-          <button class="s-prev border-0 position-absolute"> <img src="assets/images/icon-shop/arrow_back_left.svg" alt="Next Show" class="w-100"> </button>
-
+          <button id="prev" class="border-0 position-absolute"> <img src="assets/images/icon-shop/arrow_back_left.svg" alt="Next Show" class="w-100"> </button>
           <!-- Next Show -->
-          <button class="s-next border-0 position-absolute"> <img src="assets/images/icon-shop/arrow_next_right.svg" alt="Previous Show" class="w-100"> </button>          
-
+          <button id="next" class="border-0 position-absolute"> <img src="assets/images/icon-shop/arrow_next_right.svg" alt="Previous Show" class="w-100"> </button>          
         </div>
       </div>
 
+      <!-- ----------------------------- Blog ----- -->
+      <div class="blog">
+        <div class="container">
+          <!-- Title Blog -->
+          <div class="title-news">
+            <p>Lorem Ipsum</p>
+            <h2>Latest <span>News</span></h2>
+          </div>
+          <div class="row">
+            <!-- Card Blog -->
+            <div class="col-xl-4">
+              <div class="card-glog">
+                <!-- Card Head -->
+                <div class="card-head-blog">
+                  <img src="assets/images/blog/blog1.png" alt="Image Blog" class="w-100">
+                </div>
+                <!-- Card Body -->
+                <div class="card-body-blog">
+                  <!-- info Admin And Comment -->
+                  <div class="info">
+                    <span class="admin">By Miri</span>
+                    <span class="comment"> <img src="assets/images/icon-shop/comment.svg" alt="Image Comment">1 Comment</span>
+                  </div>
+                  <h3 class="mb-3"> <a href="" class="link-title-blog text-decoration-none text-capitalize">The Richland Center Shooping News and weekly shooper</a> </h3>
+                  <p>Let one fifth i bring fly to divided face for bearing divide unto seed. Winged divided light Forth.</p>
+                  <a href="" class="link-readmore text-decoration-none">Read More <img src="assets/images/icon-shop/arrow_next_right.svg" alt="Image Read More"> </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Blog -->
+            <div class="col-xl-4">
+              <div class="card-glog">
+                <!-- Card Head -->
+                <div class="card-head-blog">
+                  <img src="assets/images/blog/blog2.png" alt="Image Blog" class="w-100">
+                </div>
+                <!-- Card Body -->
+                <div class="card-body-blog">
+                  <!-- info Admin And Comment -->
+                  <div class="info">
+                    <span class="admin">By Abdallah</span>
+                    <span class="comment"> <img src="assets/images/icon-shop/comment.svg" alt="Image Comment">6 Comment</span>
+                  </div>
+                  <h3 class="mb-3"> <a href="" class="link-title-blog text-decoration-none text-capitalize">The Richland Center Shooping News and weekly shooper</a> </h3>
+                  <p>Let one fifth i bring fly to divided face for bearing divide unto seed. Winged divided light Forth.</p>
+                  <a href="" class="link-readmore text-decoration-none">Read More <img src="assets/images/icon-shop/arrow_next_right.svg" alt="Image Read More"> </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card Blog -->
+            <div class="col-xl-4">
+              <div class="card-glog">
+                <!-- Card Head -->
+                <div class="card-head-blog">
+                  <img src="assets/images/blog/blog3.png" alt="Image Blog" class="w-100">
+                </div>
+                <!-- Card Body -->
+                <div class="card-body-blog">
+                  <!-- info Admin And Comment -->
+                  <div class="info">
+                    <span class="admin">By Musab</span>
+                    <span class="comment"> <img src="assets/images/icon-shop/comment.svg" alt="Image Comment">12 Comment</span>
+                  </div>
+                  <h3 class="mb-3"> <a href="" class="link-title-blog text-decoration-none text-capitalize">The Richland Center Shooping News and weekly shooper</a> </h3>
+                  <p>Let one fifth i bring fly to divided face for bearing divide unto seed. Winged divided light Forth.</p>
+                  <a href="" class="link-readmore text-decoration-none">Read More <img src="assets/images/icon-shop/arrow_next_right.svg" alt="Image Read More"> </a>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------- Subscribe ----- -->
+      <div class="subscribe">
+        <div class="container position-relative">
+          <div class="sub-content text-center">
+            <div class="sub-title">
+              <h2 class="text-uppercase">GET UPDATE FROM ANYWHERE</h2>
+              <p>Bearing Void gathering light light his eavening unto dont afraid</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <!-- ----------------------------- Footer ----- -->
+    <footer class="footer"></footer>
 
     <!-- Hear Scripts -->
     <script src="assets/js/jquery-min.js"></script>
