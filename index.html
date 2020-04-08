@@ -25,13 +25,20 @@
 </head>
   <body>
     <!-- ----------------------------- Header ----- -->
-    <header class="header d-flex justify-content-between align-items-center">
-      <div class="container">
-
-        <div class="content d-flex justify-content-between align-items-center">
+    <header class="header position-relative">
+      <!-- content -->
+      <div id="header-fixed" class="content">
+        <div class="container pt-3 pb-3 d-flex justify-content-between align-items-center">
           <!-- logo -->
           <a href="index.html" class="logo"> <img src="assets/images/logo/logo-shop.png" alt="Logo Shop" class="img-logo"> </a>
-
+            <!-- Menu Icon Hamburger -->
+            <div id="icon-hamburger" class="icon-hamburger position-relative d-none">
+              <span class="item-ham"></span>
+              <span class="item-ham"></span>
+              <span class="item-ham"></span>
+            </div>          
+          <!-- Container if Mobile Responsive -->
+          <div id="menu-show" class="cont-right d-flex justify-content-between align-items-center">
           <!-- navigation -->
           <nav class="navigation">
             <div class="unlist">
@@ -64,8 +71,8 @@
               </li>
             </ul>
           </div>
+          </div>
         </div>
-
       </div>
     </header>
 
@@ -136,7 +143,7 @@
           </div>
           <div class="row">
             <!-- card Product -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="card-prot text-center">
                 <!-- Card Head -->
                 <div class="card-head position-relative">
@@ -157,7 +164,7 @@
             </div>
 
             <!-- card Product -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="card-prot text-center">
                 <!-- Card Head -->
                 <div class="card-head position-relative ">
@@ -178,7 +185,7 @@
             </div>
             
             <!-- card Product -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="card-prot text-center">
                 <!-- Card Head -->
                 <div class="card-head position-relative ">
@@ -199,7 +206,7 @@
             </div>
             
             <!-- card Product -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="card-prot text-center">
                 <!-- Card Head -->
                 <div class="card-head position-relative ">
@@ -220,7 +227,7 @@
             </div>
             
             <!-- card Product -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="card-prot text-center">
                 <!-- Card Head -->
                 <div class="card-head position-relative ">
@@ -241,7 +248,7 @@
             </div>
             
             <!-- card Product -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="card-prot text-center">
                 <!-- Card Head -->
                 <div class="card-head position-relative ">
@@ -262,7 +269,7 @@
             </div>
             
             <!-- card Product -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="card-prot text-center">
                 <!-- Card Head -->
                 <div class="card-head position-relative ">
@@ -283,7 +290,7 @@
             </div>
             
             <!-- card Product -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="card-prot text-center">
                 <!-- Card Head -->
                 <div class="card-head position-relative ">
@@ -311,7 +318,7 @@
         <div class="container">
           <div class="row">
             <!-- Offer Content -->
-            <div class="col-xl-5">
+            <div class="col-xl-5 col-lg-5">
               <div class="offer-content text-center">
                 <h3>Up TO 37% Off</h3>
                 <h4>Summer Sale</h4>
@@ -334,7 +341,7 @@
 
           <div id="containerpart" class="row position-relative">
             <!-- Show Sellers -->
-            <div class="sell-part col-xl-3 active">
+            <div class="sell-part col-xl-3 col-lg-3 col-md-6 active">
               <div class="show-sellers">
                 <!-- Show Head -->
                 <div class="s-head position-relative">
@@ -355,7 +362,7 @@
             </div>
 
             <!-- Show Sellers -->
-            <div class="sell-part col-xl-3 active">
+            <div class="sell-part col-xl-3 col-lg-3 col-md-6 active">
               <div class="show-sellers">
                 <!-- Show Head -->
                 <div class="s-head position-relative">
@@ -376,7 +383,7 @@
             </div>
             
             <!-- Show Sellers -->
-            <div class="sell-part col-xl-3 active">
+            <div class="sell-part col-xl-3 col-lg-3 col-md-6 active">
               <div class="show-sellers">
                 <!-- Show Head -->
                 <div class="s-head position-relative">
@@ -397,7 +404,7 @@
             </div>
             
             <!-- Show Sellers -->
-            <div class="sell-part col-xl-3 active">
+            <div class="sell-part col-xl-3 col-lg-3 col-md-6 active">
               <div class="show-sellers">
                 <!-- Show Head -->
                 <div class="s-head position-relative">
@@ -418,7 +425,7 @@
             </div>
             
             <!-- Show Sellers -->
-            <div class="sell-part col-xl-3">
+            <div class="sell-part col-xl-3 col-lg-3 col-md-6">
               <div class="show-sellers">
                 <!-- Show Head -->
                 <div class="s-head position-relative">
@@ -439,7 +446,7 @@
             </div>
             
             <!-- Show Sellers -->
-            <div class="sell-part col-xl-3">
+            <div class="sell-part col-xl-3 col-lg-3 col-md-6">
               <div class="show-sellers">
                 <!-- Show Head -->
                 <div class="s-head position-relative">
@@ -460,7 +467,7 @@
             </div>
             
             <!-- Show Sellers -->
-            <div class="sell-part col-xl-3">
+            <div class="sell-part col-xl-3 col-lg-3 col-md-6">
               <div class="show-sellers">
                 <!-- Show Head -->
                 <div class="s-head position-relative">
@@ -481,7 +488,7 @@
             </div>
             
             <!-- Show Sellers -->
-            <div class="sell-part col-xl-3">
+            <div class="sell-part col-xl-3 col-lg-3 col-md-6">
               <div class="show-sellers">
                 <!-- Show Head -->
                 <div class="s-head position-relative">
@@ -519,7 +526,7 @@
           </div>
           <div class="row">
             <!-- Card Blog -->
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="card-glog">
                 <!-- Card Head -->
                 <div class="card-head-blog">
@@ -540,7 +547,7 @@
             </div>
 
             <!-- Card Blog -->
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="card-glog">
                 <!-- Card Head -->
                 <div class="card-head-blog">
@@ -561,7 +568,7 @@
             </div>
             
             <!-- Card Blog -->
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="card-glog">
                 <!-- Card Head -->
                 <div class="card-head-blog">
@@ -611,7 +618,7 @@
         <div class="container">
           <div class="row">
             <!-- Some About us -->
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-3">
               <div class="about-some">
                 <h4>About Us</h4>
                 <p>So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved us lan Gathering thing us land years living.</p>
@@ -619,8 +626,8 @@
               </div>              
             </div>
             <!-- Quick Links -->
-            <div class="col-xl-2 ml-5 pl-4">
-              <div class="quick-links">
+            <div class="col-xl-2 col-lg-2">
+              <div class="quick-links ml-4 pl-4">
                 <h4 class="footer-title">Quick Links</h4>
                 <ul class="list-unstyled">
                   <li class="d-block"><a href="" class="text-decoration-none">Shop</a></li>
@@ -633,7 +640,7 @@
               </div>              
             </div>
             <!-- Gallery -->
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-lg-3">
               <div class="gallery">
                 <h4 class="footer-title">Gallery</h4>
                 <div class="d-flex flex-wrap">
@@ -676,9 +683,27 @@
               </div>
             </div>
             <!-- Contact Us -->
-            <div class="col-xl-3 ml-4">
+            <div class="col-xl-3 col-lg-3 ml-3">
               <div class="contact-us">
                 <h4 class="footer-title">Contact Us</h4>
+                <div class="ml-4">
+                  <!-- Item Us -->
+                  <div class="item-us mb-2 position-relative">
+                    <h5>Office address</h5>
+                    <p>Egypt, Cairo, Badr City</p>
+                  </div>
+                  <!-- Item Us -->
+                  <div class="item-us mb-2 position-relative">
+                    <h5>Phone Number</h5>
+                    <p>+20 115 656 1579</p>
+                  </div>
+                  <!-- Item Us -->
+                  <div class="item-us mb-2 position-relative">
+                    <h5>Email</h5>
+                    <p class="m-0">awedmiri@gmail.com</p>
+                    <p>abdallahhaboharba@gmail.com</p>
+                  </div>                  
+                </div>
               </div>
             </div>
           </div>

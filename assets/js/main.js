@@ -5,6 +5,30 @@
 */
 
 
+// Scroll Header
+var headerShadow = document.getElementById('header-fixed');
+
+window.onscroll = function () {
+
+    if ( document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ) {
+        headerShadow.classList.add('shadow-sm');
+    } else {
+        headerShadow.classList.remove('shadow-sm');
+    }
+}
+
+
+// Icon Hamburger Menu
+var iconHam = document.getElementById('icon-hamburger'),
+
+    menuShow = document.getElementById('menu-show');
+
+iconHam.onclick = function () {
+    iconHam.classList.toggle('open');
+    menuShow.classList.toggle('active-menu');
+}
+
+
 
 
 // Slideshow
