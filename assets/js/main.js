@@ -10,8 +10,33 @@
 // Slideshow
 const container = document.getElementById('containerpart');
 
-var part = document.getElementsByClassName('sell-part');
+var part = document.getElementsByClassName('sell-part'),
+    prev = document.getElementById('prev'),
+    next = document.getElementById('next');
 
+// Prev
+prev.onclick = function () {
+
+    for (var i = 0; i < part.length; i++) {
+
+        container.firstElementChild.classList.remove('active');
+        container.lastElementChild.classList.add('active');
+
+    }
+}
+
+// Next
+next.onclick = function () {
+
+    for (var i = 0; i < part.length; i++) {
+
+        container.lastElementChild.classList.add('active');
+        container.firstElementChild.classList.remove('active');
+
+    }
+}
+
+console.log(container.firstElementChild);
 // function slideShow() {
 //     for (var i = 0; i < part.length; i++) {
 
