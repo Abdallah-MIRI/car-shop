@@ -927,12 +927,16 @@ margin-bottom: 60px;
 @media screen and (max-width: 425px) {
 
   /* Front Intro */
+  .front-intro::before {
+    width: 5%;
+  }
+
   .front-intro .img-intro {
     display: none;
   }
 
   .front-intro .text-intro {
-    padding: 0px 5px 20px;
+    padding: 0px 5px 20px 25px;
   }
 
   /* Carousel */
