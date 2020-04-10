@@ -1,0 +1,39 @@
+/* 
+** Author: Abdallah Mohammed
+** Theme: Shop Buy
+** Version: 1.0
+*/
+
+
+
+
+/* ---------------------------------- Header ---------- */
+.header .content {
+    box-shadow: 0px 10px 27px 3px rgba(221,221,221,0.3);
+}
+/* End Header */
+
+
+
+
+/* ---------------------------------- Header ---------- */
+.signup {
+    padding: 200px 0 130px;
+}
+
+.signup .que-color {
+    background-color: #384aeb;
+}
+
+.signup .question-Login {
+    height: 610px;
+}
+
+.signup .form-color {
+    box-shadow: 0px 10px 40px 0px rgba(56,74,235,0.1);
+}
+
+/* .signup .form-sign {
+    box-shadow: 0px 10px 40px 0px rgba(56,74,235,0.1);
+} */
+/* End  */
