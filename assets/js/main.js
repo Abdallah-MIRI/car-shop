@@ -20,7 +20,6 @@ window.onscroll = function () {
 
 // Icon Hamburger Menu
 var iconHam = document.getElementById('icon-hamburger'),
-
     menuShow = document.getElementById('menu-show');
 
 iconHam.onclick = function () {
@@ -37,6 +36,18 @@ const container = document.getElementById('containerpart');
 var part = document.getElementsByClassName('sell-part'),
     prev = document.getElementById('prev'),
     next = document.getElementById('next');
+
+// Width Device
+console.log(container.children);
+
+function widthDevice() {
+    if (screen.width ===  1024) {
+        for (var i = 0; i < container.children.length; i++) {
+            container[i] = 2;
+        }
+    }
+}
+widthDevice();
 
 // Prev
 prev.onclick = function () {
@@ -60,7 +71,6 @@ next.onclick = function () {
     }
 }
 
-console.log(container.firstElementChild);
 // function slideShow() {
 //     for (var i = 0; i < part.length; i++) {
 

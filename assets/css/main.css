@@ -32,7 +32,7 @@ body {
 }
 
 .header .content .logo .img-logo {
-  width: 48px;
+  width: 112px;
 }
 
 /* content Right */
@@ -115,18 +115,50 @@ body {
   flex: 1;
 }
 
-.header .content .cont-right .navigation .unlist .menu-link {
+.header .content .cont-right .navigation .unlist .nav-menu .li-item .menu-link {
   padding: 0 20px;
   color: #222;
 }
 
-.header .content .cont-right .navigation .unlist .menu-link:hover {
+.header .content .cont-right .navigation .unlist .nav-menu .li-item .menu-link:hover {
   color: #384aeb;
 }
 
-
 .header .content .cont-right .navigation .unlist .active {
   color: #384aeb;
+}
+
+/* Dropdown */
+.header .content .cont-right .navigation .unlist .nav-menu .li-item .dropdown {
+  top: 78px;
+  background-color: #fff;
+  left: 0px;
+  min-width: 200px;
+  text-align: left;
+  transition: all 300ms ease-in;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header .content .cont-right .navigation .unlist .nav-menu .li-item:hover .dropdown {
+  top: 52px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .content .cont-right .navigation .unlist .nav-menu .li-item .dropdown .drop-item .drop-link {
+  line-height: 45px;
+  color: #222;
+  padding: 0px 30px;
+  transition: all 140ms linear;
+  display: block;
+  margin-right: 0px;
+}
+
+.header .content .cont-right .navigation .unlist .nav-menu .li-item .dropdown .drop-item .drop-link:hover {
+  color: #fff;
+  background-color: #384aeb;
 }
 
 /* Shop Buy */
@@ -403,7 +435,7 @@ body {
 /* ---------------------------------- Sale ---------- */
 .sale {
   background: #f1f6f7;
-  background: url('/assets/images/home/parallax.png') center / cover no-repeat;
+  background: linear-gradient(#00000073, #00000073), url('/assets/images/home/sale.jpg') center / cover no-repeat;
 }
 
 .sale .offer-content {
@@ -411,7 +443,7 @@ body {
 }
 
 .sale .offer-content h3 {
-  color: #222;
+  color: #fff;
   font-size: 50px;
   margin-bottom: 25px;
   font-family: 'Oswald', sans-serif;
@@ -419,13 +451,13 @@ body {
 
 .sale .offer-content h4 {
   font-size: 30px;
-  color: #222;
+  color: #dee2e6;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
 
 .sale .offer-content p {
-  color: #555;
+  color: #e9ecef;
   margin-bottom: 16px;
 }
 
@@ -443,7 +475,7 @@ body {
 }
 
 .sale .offer-content .offer-link:hover {
-  color: #222;
+  color: #fff;
   background-color: transparent;
 }
 /* End Sale */
@@ -539,6 +571,7 @@ margin-bottom: 60px;
   height: 40px;
   border-radius: 3px;
   background: #f1f6f7;
+  transition: all .5s ease;
 }
 
 #prev {
@@ -554,7 +587,7 @@ margin-bottom: 60px;
 
 #prev:hover,
 #next:hover {
-  background: #384aeb;
+  background: transparent;
 }
 
 #prev:focus,
@@ -842,13 +875,28 @@ margin-bottom: 60px;
     background-color: #f8f9fa;
     width: 250px;
     opacity: 0;
+    visibility: hidden;
     text-align: center;
     transition: all .4s ease;
   }
 
-  .header .content .cont-right .navigation .unlist ul li {
+  .header .content .cont-right .navigation .unlist .nav-menu .li-item {
     display: block !important;
     margin: 10px 0;
+  }
+
+  /* Dropdown */
+  .header .content .cont-right .navigation .unlist .nav-menu .li-item .dropdown {
+    position: initial !important;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+  }
+
+  .header .content .cont-right .navigation .unlist .nav-menu .li-item:hover .dropdown {
+    padding: 7px 0;
+    display: block;
   }
 
   .header .content .cont-right .shop-buy {
@@ -876,6 +924,7 @@ margin-bottom: 60px;
   .header .content .cont-right.active-menu {
     right: 0;
     opacity: 1;
+    visibility: visible;
     width: 300px;
   }
 

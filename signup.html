@@ -31,7 +31,7 @@
       <div id="header-fixed" class="content">
         <div class="container pt-3 pb-3 d-flex justify-content-between align-items-center">
           <!-- logo -->
-          <a href="index.html" class="logo"> <img src="assets/images/logo/logo-shop.png" alt="Logo Shop" class="img-logo"> </a>
+          <a href="index.html" class="logo"> <img src="assets/images/logo/logo-2.png" alt="Logo Shop" class="img-logo"> </a>
             <!-- Menu Icon Hamburger -->
             <div id="icon-hamburger" class="icon-hamburger position-relative d-none">
               <span class="item-ham"></span>
@@ -43,12 +43,37 @@
           <!-- navigation -->
           <nav class="navigation">
             <div class="unlist">
-              <ul class="list-unstyled m-0">
-                <li class="d-inline-block"><a href="index.html" class="menu-link text-decoration-none active">Home</a></li>
-                <li class="d-inline-block"><a href="" class="menu-link text-decoration-none">Shop</a></li>
-                <li class="d-inline-block"><a href="" class="menu-link text-decoration-none">Blog</a></li>
-                <li class="d-inline-block"><a href="" class="menu-link text-decoration-none">Pages</a></li>
-                <li class="d-inline-block"><a href="" class="menu-link text-decoration-none">Contact</a></li>
+              <ul class="list-unstyled m-0 nav-menu">
+                <li class="d-inline-block li-item"><a href="" class="menu-link text-decoration-none active">Home</a></li>
+                <li class="d-inline-block position-relative li-item">
+                  <a href="" class="menu-link text-decoration-none">Shop</a>
+                  <!-- Dropdown -->
+                  <ul class="list-unstyled m-0 position-absolute dropdown">
+                    <li class="drop-item"> <a href="category.html" class="text-decoration-none drop-link">Shop Category</a> </li>
+                    <li class="drop-item"> <a href="single.html" class="text-decoration-none drop-link">Product Details</a> </li>
+                    <li class="drop-item"> <a href="checkout.html" class="text-decoration-none drop-link">Product Checkout</a> </li>
+                    <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Confirmation</a> </li>
+                    <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Shopping Cart</a> </li>
+                  </ul>
+                </li>
+                <li class="d-inline-block position-relative li-item">
+                  <a href="" class="menu-link text-decoration-none">Blog</a>
+                  <!-- Dropdown -->
+                  <ul class="list-unstyled m-0 position-absolute dropdown">
+                    <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Blog</a> </li>
+                    <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Blog Details</a> </li>
+                  </ul>
+                </li>
+                <li class="d-inline-block position-relative li-item">
+                  <a href="" class="menu-link text-decoration-none">Pages</a>
+                  <!-- Dropdown -->
+                  <ul class="list-unstyled m-0 position-absolute dropdown">
+                    <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Login</a> </li>
+                    <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Register</a> </li>
+                    <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Tracking</a> </li>
+                  </ul>                  
+                </li>
+                <li class="d-inline-block li-item"><a href="" class="menu-link text-decoration-none">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -68,7 +93,7 @@
                 </button>
               </li>
               <li class="d-inline">
-                <a href="#buy" class="btn-buy text-decoration-none">Sign Up</a>
+                <a href="signup.html" class="btn-buy text-decoration-none">Sign Up</a>
               </li>
             </ul>
           </div>
@@ -83,29 +108,36 @@
 				<div class="container">
 					<div class="row">
 						<!-- Question Login -->
-						<div class="que-color col-xl-6 d-flex align-items-center">
+						<div class="que-color col-xl-6 col-lg-6 d-flex align-items-center">
 							<div class="question-Login text-center text-light">
-								<h2 class="">Did you sign up?</h2>
+								<h2 class="">do you have an account?</h2>
 								<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-								<a href="" class="text-light">Log in</a>
+								<a href="signin.html" class="text-light d-block text-decoration-none que-link">Log in</a>
 							</div>
 						</div>
 						<!-- Form Sign -->
-						<div class="form-color col-xl-6">
-							<div class="form-sign">
-								<h2>Sign Up</h2>
+						<div class="form-color col-xl-6 col-lg-6">
+							<div class="form-sign m-auto">
+								<h2 class="text-center">Sign Up</h2>
 								<form action="">
-									<input type="text" placeholder="First name" class="">
-									<input type="text" placeholder="Last name" class="">
-									<input type="email" placeholder="Your Email" class="">
-									<input type="password" placeholder="Password" class="">
-									<input type="text" placeholder="Phone" class="">
-									<input type="checkbox" class=""> 
-									<label for="">I agree to the terms and conditions</label>
-									<button class="">Sign Up</button>
+                  <div class="item-name">
+                    <input type="text" name="username" placeholder="Username" required id="username" class="d-block border-0 w-100">
+                  </div>
+                  <div class="item-phone">
+                    <input type="text" name="phone" placeholder="Phone" required id="phone" class="d-block border-0 w-100">
+                  </div>
+                  <div class="item-email">
+                    <input type="email" name="email" placeholder="Your Email" required id="emailsign" class="d-block border-0 w-100">
+                  </div>
+                  <div class="item-password">
+                    <input type="password" name="password" placeholder="Password" required id="password" class="d-block border-0 w-100">
+                  </div>
+                  <div class="item-checkbox mt-3 mb-3">
+                    <input type="checkbox" name="selector" required id="checkbox"> 
+                    <label for="checkbox">I agree to the terms and conditions</label>
+                  </div>
+									<button id="btn-signup" class="d-block border-0 text-light w-100">Sign Up</button>
 								</form>
-								<a href="" class="">Forgot Password?</a>
-								<a href="" class="">Register via Facebook</a>
 							</div>
 						</div>
 					</div>
@@ -148,37 +180,37 @@
                 <div class="d-flex flex-wrap">
                   <!-- Content Gallery -->
                   <div class="content-gallery position-relative">
-                    <img src="assets/images/gallery/r1.jpg" alt="Image Gallery" class="img-gallery">
+                    <img src="assets/images/gallery/g-1.jpg" alt="Image Gallery" class="img-gallery">
                     <span class="link-gallery d-flex justify-content-center align-items-center position-absolute"> <a href="" class="text-light">One</a> </span>                     
                   </div>
 
                   <!-- Content Gallery -->
                   <div class="content-gallery position-relative">
-                    <img src="assets/images/gallery/r2.jpg" alt="Image Gallery" class="img-gallery">
+                    <img src="assets/images/gallery/g-2.jpg" alt="Image Gallery" class="img-gallery">
                     <span class="link-gallery d-flex justify-content-center align-items-center position-absolute"> <a href="" class="text-light">One</a> </span>                     
                   </div>
                   
                   <!-- Content Gallery -->
                   <div class="content-gallery position-relative">
-                    <img src="assets/images/gallery/r3.jpg" alt="Image Gallery" class="img-gallery">
+                    <img src="assets/images/gallery/g-7.jpg" alt="Image Gallery" class="img-gallery">
                     <span class="link-gallery d-flex justify-content-center align-items-center position-absolute"> <a href="" class="text-light">One</a> </span>                     
                   </div>
                   
                   <!-- Content Gallery -->
                   <div class="content-gallery position-relative">
-                    <img src="assets/images/gallery/r5.jpg" alt="Image Gallery" class="img-gallery">
+                    <img src="assets/images/gallery/g-8.jpg" alt="Image Gallery" class="img-gallery">
                     <span class="link-gallery d-flex justify-content-center align-items-center position-absolute"> <a href="" class="text-light">One</a> </span>                     
                   </div>
                   
                   <!-- Content Gallery -->
                   <div class="content-gallery position-relative">
-                    <img src="assets/images/gallery/r8.jpg" alt="Image Gallery" class="img-gallery">
+                    <img src="assets/images/gallery/g-6.jpg" alt="Image Gallery" class="img-gallery">
                     <span class="link-gallery d-flex justify-content-center align-items-center position-absolute"> <a href="" class="text-light">One</a> </span>                     
                   </div>
                   
                   <!-- Content Gallery -->
                   <div class="content-gallery position-relative">
-                    <img src="assets/images/gallery/r7.jpg" alt="Image Gallery" class="img-gallery">
+                    <img src="assets/images/gallery/g-3.jpg" alt="Image Gallery" class="img-gallery">
                     <span class="link-gallery d-flex justify-content-center align-items-center position-absolute"> <a href="" class="text-light">One</a> </span>                     
                   </div>                  
                 </div>
