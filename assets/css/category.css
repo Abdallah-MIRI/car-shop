@@ -10,5 +10,36 @@
 
 /* ---------------------------------- Category ---------- */
 .cat {
-    padding: 150px 0;
+	padding: 150px 0;
 }
+
+.search-products .title-cat {
+	line-height: 50px;
+    padding: 0 40px 0 30px;
+    font-size: 18px;
+}
+/* End */
+
+
+
+
+/* ---------------------------------- Sidebar Categories ---------- */
+.sidebar-categories .type-product .head-type {
+	background-color: #384aeb;
+}
+
+.sidebar-categories .type-product .head-type .show-cat {
+	top: 13px;
+	right: 12px;
+	color: #e9ecef;
+	cursor: pointer;
+}
+
+.sidebar-categories .type-product .type-Filters {
+	padding: 20px 28px;
+	background-color: #f8f9fa;
+	position: absolute;
+	top: auto;
+	bottom: 0;
+}
+/* End Sidebar Categories */

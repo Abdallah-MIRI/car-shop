@@ -187,6 +187,13 @@ body {
   margin-right: 7px;
 }
 
+#search-input {
+  position: absolute;
+  left: -215px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
 .header .content .cont-right .shop-buy .car-count .count {
   position: absolute;
   top: -10px;
@@ -199,17 +206,41 @@ body {
   color: #fff;
 }
 
+#user {
+  outline: none;
+  background-color: transparent;
+}
+
+#user img {
+  width: 19px;
+}
+
+.header .content .cont-right .shop-buy  .li-user .list-user {
+  top: 78px;
+  bottom: auto;
+  left: 0;
+  padding: 5px 10px;
+  background-color: #fff;
+  min-width: 200px;
+  transition: all 300ms ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header .content .cont-right .shop-buy  .li-user:hover .list-user {
+  top: 48px;
+  opacity: 1;
+  visibility: visible;
+}
+
 .header .content .cont-right .shop-buy .btn-buy {
-  margin-left: 20px;
-  padding: 10px 45px;
-  border-radius: 30px;
-  border: 1px solid #eee;
   color: #222;
+  padding: 5px;
   transition: all .4s ease;
 }
 
 .header .content .cont-right .shop-buy .btn-buy:hover {
-  border-color: #384aeb;
+  color: #384aeb;
 }
 /* End Header */
 

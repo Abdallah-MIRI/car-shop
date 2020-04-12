@@ -38,8 +38,6 @@ var part = document.getElementsByClassName('sell-part'),
     next = document.getElementById('next');
 
 // Width Device
-console.log(container.children);
-
 function widthDevice() {
     if (screen.width ===  1024) {
         for (var i = 0; i < container.children.length; i++) {
@@ -50,7 +48,7 @@ function widthDevice() {
 widthDevice();
 
 // Prev
-prev.onclick = function () {
+/* prev.onclick = function () {
 
     for (var i = 0; i < part.length; i++) {
 
@@ -69,7 +67,7 @@ next.onclick = function () {
         container.firstElementChild.classList.remove('active');
 
     }
-}
+} */
 
 // function slideShow() {
 //     for (var i = 0; i < part.length; i++) {

@@ -51,7 +51,7 @@
                   <!-- Dropdown -->
                   <ul class="list-unstyled m-0 position-absolute dropdown">
                     <li class="drop-item"> <a href="category.html" class="text-decoration-none drop-link">Shop Category</a> </li>
-                    <li class="drop-item"> <a href="index.html" class="text-decoration-none drop-link">Product Details</a> </li>
+                    <li class="drop-item"> <a href="single.html" class="text-decoration-none drop-link">Product Details</a> </li>
                     <li class="drop-item"> <a href="checkout.html" class="text-decoration-none drop-link">Product Checkout</a> </li>
                     <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Confirmation</a> </li>
                     <li class="drop-item"> <a href="" class="text-decoration-none drop-link">Shopping Cart</a> </li>
@@ -82,19 +82,24 @@
           <!-- Shop Buy -->
           <div class="shop-buy">
             <ul class="list-unstyled m-0">
-              <li class="d-inline">
-                <button id="btn-search">
+              <li class="d-inline position-relative">
+                <a href="category.html" id="btn-search" class="text-decoration-none">
                   <img src="assets/images/icon-shop/search-outline.svg" alt="Search Shop" class="search-car">
-                </button>
+                </a>
               </li>
-              <li class="car-count d-inline">
+              <li class="car-count d-inline ">
                 <button id="btn-car-shop" class="position-relative">
                   <img src="assets/images/icon-shop/cart-outline.svg" alt="Car Shop" class="car-shop">
                   <span class="count">2</span>                  
                 </button>
               </li>
-              <li class="d-inline">
-                <a href="signup.html" class="btn-buy text-decoration-none">Sign Up</a>
+              <li class="d-inline position-relative li-user">
+                <button id="user" class="border-0"> <img src="assets/images/icon-shop/user-icon.png" alt="Image User"> </button>
+                <ul class="list-user list-unstyled position-absolute">
+                  <li><a href="signup.html" class="btn-buy text-decoration-none d-block">Sign Up</a></li>
+                  <li><a href="signin.html" class="btn-buy text-decoration-none d-block">Sign In</a></li>
+                  <li><a href="" class="btn-buy text-decoration-none d-block">Like pro</a></li>
+                </ul>
               </li>
             </ul>
           </div>
