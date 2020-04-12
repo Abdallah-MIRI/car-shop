@@ -466,7 +466,7 @@ body {
 /* ---------------------------------- Sale ---------- */
 .sale {
   background: #f1f6f7;
-  background: linear-gradient(#00000073, #00000073), url('/assets/images/home/sale.jpg') center / cover no-repeat;
+  background: url('/assets/images/home/back.png') center / cover no-repeat;
 }
 
 .sale .offer-content {
@@ -474,7 +474,7 @@ body {
 }
 
 .sale .offer-content h3 {
-  color: #fff;
+  color: #222;
   font-size: 50px;
   margin-bottom: 25px;
   font-family: 'Oswald', sans-serif;
@@ -482,13 +482,13 @@ body {
 
 .sale .offer-content h4 {
   font-size: 30px;
-  color: #dee2e6;
+  color: rgb(59, 59, 59);
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
 
 .sale .offer-content p {
-  color: #e9ecef;
+  color: rgb(77, 77, 77);
   margin-bottom: 16px;
 }
 
@@ -506,7 +506,7 @@ body {
 }
 
 .sale .offer-content .offer-link:hover {
-  color: #fff;
+  color: #222;
   background-color: transparent;
 }
 /* End Sale */
@@ -606,12 +606,12 @@ margin-bottom: 60px;
 }
 
 #prev {
-  top: 50%;
+  top: 45%;
   left: -6%;
 }
 
 #next {
-  top: 50%;
+  top: 45%;
   right: -6%;
   left: auto;
 }
