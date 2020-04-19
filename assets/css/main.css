@@ -414,6 +414,14 @@ body {
 }
 
 /* Head */
+.trending-products .card-prot .card-head {
+  height: 250px;
+}
+
+.trending-products .card-prot .card-head img {
+  height: 100%;
+}
+
 .trending-products .card-prot .card-head .list-card {
   width: 100%;
   padding: 30px 5px 0;
@@ -465,8 +473,9 @@ body {
 
 /* ---------------------------------- Sale ---------- */
 .sale {
-  background: #f1f6f7;
-  background: url('/assets/images/home/back.png') center / cover no-repeat;
+  background: -webkit-linear-gradient(#0000004d, #0000004d);
+  background: -moz-linear-gradient(#0000004d, #0000004d); 
+  background: linear-gradient(#0000004d, #0000004d), url('/assets/images/blog/back-sale-1.jpg') center / cover no-repeat;
 }
 
 .sale .offer-content {
@@ -474,7 +483,7 @@ body {
 }
 
 .sale .offer-content h3 {
-  color: #222;
+  color: #fff;
   font-size: 50px;
   margin-bottom: 25px;
   font-family: 'Oswald', sans-serif;
@@ -482,13 +491,13 @@ body {
 
 .sale .offer-content h4 {
   font-size: 30px;
-  color: rgb(59, 59, 59);
+  color: #dee2e6;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
 
 .sale .offer-content p {
-  color: rgb(77, 77, 77);
+  color: #adb5bd;
   margin-bottom: 16px;
 }
 
@@ -506,7 +515,7 @@ body {
 }
 
 .sale .offer-content .offer-link:hover {
-  color: #222;
+  color: #fff;
   background-color: transparent;
 }
 /* End Sale */
@@ -549,6 +558,14 @@ margin-bottom: 60px;
 }
 
 /* show Head */
+.best-sellers .show-sellers .s-head {
+  height: 250px;
+}
+
+.best-sellers .show-sellers .s-head img {
+  height: 100%;
+}
+
 .best-sellers .show-sellers .s-head .s-list {
   width: 100%;
   padding: 30px 5px 0;
@@ -801,8 +818,14 @@ margin-bottom: 60px;
   margin: 5px;
 }
 
-.footer .footer-head .content-gallery .img-gallery {
+.footer .footer-head .content-gallery {
   width: 70px;
+  height: 70px;
+}
+
+.footer .footer-head .content-gallery img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer .footer-head .content-gallery .link-gallery {
@@ -811,8 +834,8 @@ margin-bottom: 60px;
   bottom: 0;
   width: 50%;
   height: 100%;
-  background-color: #384aeb;
-  transition: all .5s ease;
+  background-color: #384aebab;
+  transition: all .5s ease-out;
   opacity: 0;
 }
 

@@ -119,15 +119,19 @@
         <div class="container">
           <div class="row">
             <!-- Sidebar -->
-            <div class="col0xl-4">
+            <div class="col-xl-3">
               <div class="sidebar-categories">
                 <!-- Type -->
                 <div class="type-product position-relative mb-4">
+                  <!-- Head -->
                   <div class="head-type position-relative">
                     <h3 class="title-cat text-light m-0">Type Product</h3>
-                    <span class="position-absolute show-cat"> <i class="fas fa-minus"></i> </span>
+                    <button id="showcat" class="border-0 position-absolute show-cat">
+                       <span id="iconfilter" class="iconfilter position-absolute"></span>
+                       <span class="iconfilter position-absolute"></span>
+                    </button>
                   </div>
-                  <div class="menu-Filter type-Filters">
+                  <div id="type-filters" class="type-filters">
                     <form action="">
                       <ul class="list-unstyled">
                         <li class="d-block">
@@ -156,11 +160,15 @@
                 </div>
                 <!-- Filters all -->
                 <div class="type-product position-relative mb-4">
+                  <!-- Head -->
                   <div class="head-type position-relative">
                     <h3 class="title-cat text-light m-0">Type Product</h3>
-                    <span class="position-absolute show-cat"> <i class="fas fa-minus"></i> </span>
+                    <button id="showcat" class="border-0 position-absolute show-cat">
+                      <span id="iconfilter" class="iconfilter position-absolute"></span>
+                      <span class="iconfilter position-absolute"></span>
+                   </button>
                   </div>
-                  <div class="menu-Filter type-Filters">
+                  <div id="type-filters" class="type-filters">
                     <form action="">
                       <ul class="list-unstyled">
                         <li class="d-block">
@@ -189,7 +197,7 @@
                 </div>                
               </div>
             </div>
-            <div class="col0xl-8"></div>
+            <div class="col-xl-9"></div>
           </div>
         </div>
       </div>

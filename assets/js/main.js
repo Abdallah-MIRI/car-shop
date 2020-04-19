@@ -79,3 +79,17 @@ next.onclick = function () {
 
 // setTimeout(slideShow, 3000);
 
+
+/* 
+// Show and Hidden Filters Page Search
+*/
+// var btnShow = document.getElementById('showcat'),
+//     icon    = document.getElementById('iconfilter'),
+//     filters = document.getElementById('type-filters');
+
+// btnShow.onclick = function () {
+//     filters.classList.toggle('hidden-filters');
+//     btnShow.children.classList.toggle('hidden');
+// }
+
+// console.log(btnShow.children);
